@@ -17,3 +17,6 @@ Images are illustrative stock photos, not company project documentation. Replace
 - style.css — responsive styling
 - app.js — interactions and request preparation
 - structure.jpg, site.jpg, villa.jpg — illustrative photos from Unsplash
+
+## Fonts
+Tajawal is bundled locally with its SIL Open Font License (OFL.txt). Body copy uses medium weight and higher contrast for easier Arabic reading.
