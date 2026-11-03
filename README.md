@@ -1,4 +1,4 @@
-# إبداع الإنشاء للمقاولات العامة
+# شركة أفكار هندسية للاستشارات الهندسية
 
 Arabic RTL construction landing page, built with HTML, CSS, and JavaScript.
 
@@ -10,7 +10,7 @@ Open index.html, or serve this directory with any static web server. No build st
 ## Configuration
 Set the verified company phone and WhatsApp numbers in COMPANY in app.js. The quote form currently prepares a downloadable request locally; it does not send requests or create server-side tickets. Connect the approved ticket system before using it to collect leads.
 
-Images are illustrative stock photos, not company project documentation. Replace them and the provisional line-art brand mark with approved company assets before advertising.
+Images are illustrative stock photos, not company project documentation. Replace illustrative photographs with approved company projects before advertising. The EIC logo is the original asset from afkar-eic.com.
 
 ## Files
 - index.html — page content
