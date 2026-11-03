@@ -7,3 +7,23 @@
 .brand .official-logo{width:124px;height:62px;object-fit:contain;flex-shrink:0;filter:none}.brand{gap:17px}.floating-quote{position:fixed;bottom:25px;left:30px;z-index:25;background:var(--gold);color:var(--ink);padding:16px 24px;box-shadow:0 5px 25px #0002;font-size:14px;font-weight:700;display:flex;gap:35px;opacity:0;transform:translateY(20px);pointer-events:none;transition:.25s}.floating-quote.shown{opacity:1;transform:none;pointer-events:auto}.mobile-bar{transition:transform .25s}.mobile-bar.at-form{transform:translateY(110%)}@media(max-width:1050px){.brand .official-logo{width:100px;height:52px}.brand{font-size:20px;gap:12px}}@media(max-width:700px){.brand .official-logo{width:83px;height:44px}.brand{font-size:17px;gap:10px}.brand small{font-size:9px}.floating-quote{display:none}header{padding-right:5%;padding-left:5%}.hero .eyebrow{font-size:11px}}@media(max-width:420px){.form-grid{grid-template-columns:1fr}.brand{font-size:15px}.brand .official-logo{width:70px;height:40px}.header-cta{font-size:11px}}
 
 .hero-content>p.hero-tagline{font-size:19px;color:#dfd9bc;margin:-2px 0 14px;font-weight:500}.hero-content>p.cta-hint{font-size:11px;color:#a0a594;margin:12px 0 0;line-height:1.8}.request-highlight{animation:request-focus 1.8s ease-out}@keyframes request-focus{0%,30%{box-shadow:0 0 0 3px var(--gold),0 15px 50px #9f86251f}100%{box-shadow:0 0 0 0 transparent}}.hero-content h1{font-size:clamp(60px,6.1vw,96px);line-height:1.3}.hero-content .hero-foot{padding-top:20px}@media(max-width:700px){.hero-content h1{font-size:clamp(44px,11.9vw,65px);margin:22px 0 18px;letter-spacing:-1.8px}.hero-content>p.hero-tagline{font-size:16px;margin-bottom:12px}.hero-content>p.cta-hint{font-size:10px}.hero-actions{gap:17px}.hero-actions .button{font-size:12px}.hero-actions .text-button{font-size:11px}.request h2{font-size:47px}}
+
+/* Five restrained motion treatments: entrance, frame, services, stages, CTAs. */
+.hero-frame{position:absolute;inset:18px;width:calc(100% - 36px);height:calc(100% - 36px);overflow:visible;pointer-events:none;z-index:1}.hero-frame rect{fill:none;stroke:#e8deba88;stroke-width:1}.hero-photo:after{border:0}.hero-frame{color:var(--gold)}
+@media(prefers-reduced-motion:no-preference){
+ .motion-ready .hero-content>.eyebrow,.motion-ready .hero-content h1,.motion-ready .hero-content>.hero-tagline,.motion-ready .hero-content>p:not(.hero-tagline),.motion-ready .hero-actions{animation:hero-arrive .6s cubic-bezier(.2,.65,.3,1) both}
+ .motion-ready .hero-content>.eyebrow{animation-delay:40ms}.motion-ready .hero-content h1{animation-delay:100ms}.motion-ready .hero-content>.hero-tagline{animation-delay:180ms}.motion-ready .hero-content>p:not(.hero-tagline){animation-delay:230ms}.motion-ready .hero-actions{animation-delay:290ms}
+ .motion-ready .hero-frame rect{stroke-dasharray:1;stroke-dashoffset:0;animation:frame-trace 1.15s cubic-bezier(.2,.6,.4,1) .2s both}
+ .service-list .service-row{transition-duration:.45s;transition-delay:0ms}.js-motion .service-list .service-row:nth-child(2){transition-delay:65ms}.js-motion .service-list .service-row:nth-child(3){transition-delay:130ms}
+ .button b,.header-cta span,.underlined span,.floating-quote span,.mobile-bar a{transition:transform .22s cubic-bezier(.2,.65,.3,1)}
+ .button:active,.floating-quote:active{transform:translateY(1px);transition-duration:80ms}
+}
+@keyframes hero-arrive{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes frame-trace{from{stroke-dashoffset:1;opacity:.15}to{stroke-dashoffset:0;opacity:1}}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+ .gold:hover{transform:translateY(-2px);box-shadow:0 7px 20px #00000012}
+ .button:hover b,.button:focus-visible b,.header-cta:hover span,.header-cta:focus-visible span,.underlined:hover span,.floating-quote:hover span{transform:translate(-3px,-3px)}
+ .service-row:hover .circle{transform:rotate(-8deg)}
+}
+@media(max-width:700px){.hero-frame{inset:12px;width:calc(100% - 24px);height:calc(100% - 24px)}}
+@media(prefers-reduced-motion:reduce){.hero-frame rect{stroke-dasharray:none;stroke-dashoffset:0}.hero-photo img{animation:none!important}.js-motion .service-list .service-row{transition-delay:0ms}.motion-ready .hero-content>*{opacity:1;transform:none}}
